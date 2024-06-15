@@ -97,8 +97,4 @@ Low-level and Mid-Level Visual Fusion of 3D LiDAR points with the 2D Object dete
        |  ├── 000035.pcd 
        |  ├── ...
 
-### TODO
-- [ ] Add Run Instructions
-- [ ] Add Dependencies
-- [ ] Add References
-- [ ] High-Level Fusion
+

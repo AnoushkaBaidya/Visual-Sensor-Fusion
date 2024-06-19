@@ -25,11 +25,11 @@ Low-level and Mid-Level Visual Fusion of 3D LiDAR points with the 2D Object dete
 
 
 
-* LiDAR points are projected on the image using camera instrinsic and extrinsic matrix
-* The points that lie within the detected 2D Bounding Box by YOLO are stored and rest are ignored
+* LiDAR points are projected on the image using the camera intrinsic and extrinsic matrix.
+* The points that lie within the detected 2D Bounding Box by YOLO are stored and the rest are ignored.
 * There are some outliers inside bboxes that do not belong to that category, to reject these outliers there are several ways.
 * One way is to shrink the bounding box size so that the points that absolutely belong to the desired objects are only considered.
-* Another way is to use the Sigma Rule, i.e include the points that are within 1 sigma or 2 sigma away from gaussian mean, based on the distance of points
+* Another way is to use the Sigma Rule, i.e. include the points that are within 1 sigma or 2 sigma away from Gaussian mean, based on the distance of points.
 
 
 
@@ -57,9 +57,9 @@ Low-level and Mid-Level Visual Fusion of 3D LiDAR points with the 2D Object dete
 
 
 
-* 2D Bboxes from LiDAR are associated with YOLO 2D Bboxes using [Hungarian](https://en.wikipedia.org/wiki/Hungarian_algorithm) Algorithm
-* Green Bounding Boxes are detected by YOlO whereas Blue Bounding Boxes are calculated using LiDAR points
-* YOLO missed 1 vehicle, whereas 2 vehicles are missed by LiDAR, one of which is half out of frame, at the bottom right side
+* 2D Bboxes from LiDAR are associated with YOLO 2D Bboxes using [Hungarian](https://en.wikipedia.org/wiki/Hungarian_algorithm) Algorithm.
+* Green Bounding Boxes are detected by YOLO whereas Blue Bounding Boxes are calculated using LiDAR points.
+* YOLO missed 1 vehicle, whereas 2 vehicles are missed by LiDAR, one of which is half out of frame, at the bottom right side.
 
 ## File Structure
     .
